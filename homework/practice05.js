@@ -222,3 +222,4 @@ console.log(startT3("typescript"))
 console.log(startT3("TechGlobal"))
 console.log(startT3("1234"))
 console.log(startT3("ABC"))
+
