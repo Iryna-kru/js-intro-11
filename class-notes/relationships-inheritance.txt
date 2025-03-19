@@ -1,0 +1,25 @@
+Interview question
+
+What is 'IS A RELATIONSHIP' vs 'HAS A RELATIONSHIP'?
+class Animal {
+	
+}
+class Dog extends Animal {
+	
+}
+class GermanShepherd extends Dog {
+	
+}
+GermanShepherd is a Dog
+GermanShepher is an Animal
+IS A RELATIONSHIP: inheritance with parent child relationship
+Author has Books
+Car has Engine
+HAS A RELATIONSHIP: it is not inheritance but one class uses another class as property.
+class Car{
+	constructor(engine) {
+	}
+}
+class Engine {
+	
+}
