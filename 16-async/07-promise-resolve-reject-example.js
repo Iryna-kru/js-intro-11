@@ -35,7 +35,7 @@ function connectToDB() {
       .then(() => useData())
       .catch(err => console.log(err));
   }
-  
+  test2();
   
   async function test3() {
     try {
