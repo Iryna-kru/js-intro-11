@@ -30,3 +30,4 @@ function program() {
   player1Score();
   console.log(player1Score());
   console.log(player2Score());
+
