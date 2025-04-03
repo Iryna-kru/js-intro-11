@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in Table</title>
+    <style>
+        body {
+
+            font-family: Arial,
+
+        }
+
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin-top: 1px;
+            background-color: burlywood;
+        }
+
+        th,
+        td {
+            padding: 2px;
+            text-align: left;
+            border: 1px solid black;
+        }
+
+        td input,
+        td select,
+        td textarea {
+            width: 50%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        td input[type="checkbox"],
+        td input[type="radio"] {
+            width: auto;
+        }
+
+        .buttons-container {
+            margin-top: 10px;
+            justify-content: space-around;
+        }
+
+        .buttons-container button {
+            padding: 10px 30px;
+            font-size: 16px;
+            cursor: pointer;
+
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons-container button:hover {
+            background-color: #ddd;
+        }
+
+        .save-btn {
+            background-color: blue;
+            color: white;
+            border: 2px solid white
+        }
+
+        .cancel-btn {
+            background-color: white;
+            color: black;
+            border: 2px solid blue
+        }
+
+        .resize-btn {
+            background-color: grey;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Form in Table Layout</h2>
+
+    <table>
+
+        <tr>
+            <td>
+                <h3>Name:</h3>
+            </td>
+            <td><input type="text" id="name" name="name" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Email:</h3>
+            </td>
+            <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Password:</h3>
+            </td>
+            <td><input type="password" id="password" name="password" placeholder="Enter your password"></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Approval Required:</h3><br />
+                Click on the button or text to <br />
+                check/uncheck
+            </td>
+            <td><input type="checkbox" id="approve" name="approve"> Do you approve?</td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Pick Your Favorite</h3>
+                Click on the button or text to <br />
+                to select.
+            </td>
+            <td>
+                <div class="favorite-options">
+                    <label><input type="radio" id="choiceA" name="favorite" value="Choice A"> Choice A</label><br />
+                    <label><input type="radio" id="choiceB" name="favorite" value="Choice B"> Choice B</label><br />
+                    <label><input type="radio" id="choiceC" name="favorite" value="Choice C"> Choice C</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Popup Menu:</h3>
+            </td>
+            <td>
+                <select id="popupMenu" name="popupMenu">
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>List</h3>
+                Setup Options:<br />
+                -Number of rows to display<br />
+                -Allow Multi-select
+            </td>
+            <td>
+                <select multiple id="list" name="list" size="4">
+                    <option value="California">California</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Florida">Florida</option>
+                    <option value="New York">New York</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="Michigan">Michigan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Text Area</h3>
+            </td>
+            <td><textarea id="textarea" name="textarea" placeholder="Enter your comments" rows="4"
+                    style="width: 80%;"></textarea></td>
+        </tr>
+    </table>
+
+
+    <div class="buttons-container">
+        <button class="save-btn">Save</button>
+        <button class="cancel-btn">Cancel</button>
+        <button class="resize-btn">Resize</button>
+    </div>
+
+</body>
+
+</html>

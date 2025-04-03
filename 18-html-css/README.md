@@ -33,24 +33,24 @@ Notes:
 
 - **Nesting**: Render element inside another element
 
-Day 2
-HTML tables
-Table is html element
-Can be used to display tabular data
-table - parent element
-tr - Table row element
-th - Table Heading
-td - Cell data
-thead - Group head elements
-tbody - Group content of table data
-tfoot - Group footer table data
-HTML Forms
-form - Most parent element
+# Day 2
+## HTML tables
+- Table is html element
+- Can be used to display tabular data
+- table - parent element
+- `tr` - Table row element
+- `th` - Table Heading
+- `td` - Cell data
+- `thead` - Group head elements
+- `tbody` - Group content of table data
+- `tfoot` - Group footer table data
+## HTML Forms
+- `form` - Most parent element
 
-label - Label/text for input element
+- `label` - Label/text for input element
 
-input - Used to take user information
+- `input` - Used to take user information
 
-text
-email
-button - Button element
+    - text
+    - email
+    - button - Button element
